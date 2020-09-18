@@ -18,11 +18,11 @@ const orm = {
         console.log(result);
     });
   },
-  updateOne: function(val) {
-    var queryString = "UPDATE burgers SET devoured = false WHERE id = ?";
+  updateOne: function(val, id) {
+    var queryString = "UPDATE burgers SET devoured = ? WHERE id = ?";
 
     connection.query(
-      queryString,[val],
+      queryString,[val, id],
       function(err, result) {
         if (err) throw err;
         console.log(result);

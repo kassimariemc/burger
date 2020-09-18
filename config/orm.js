@@ -3,7 +3,7 @@ const connection = require("../config/connection.js");
 const orm = {
   selectAll: function() {
     var queryString = "SELECT * FROM burgers";
-    connection.query(queryString, [table], 
+    connection.query(queryString, 
       function(err, result) {
         if (err) throw err;
         console.log(result);
@@ -31,4 +31,4 @@ const orm = {
   }
 };
 
-module.exports = new orm;
+module.exports = orm;

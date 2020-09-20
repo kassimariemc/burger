@@ -13,10 +13,20 @@ h1, li {
   font-weight: bold !important;
 }
 
+lh, li {
+  border-radius: 5px;
+}
+
+.header {
+  background-color: rgb(244, 162, 97, 0.8);
+  border-radius: 50px;
+}
+
 lh {
   color: #F4A261;
   font-size: 30px !important;
   font-weight: bold !important;
+  background-color: rgb(42, 157, 143, 0.7);
 }
 
 li {

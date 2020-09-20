@@ -1,11 +1,19 @@
 <div class="jumbotron">
-  <h1 class="display-3 text-center mb-4">Eat-Da-Burger!</h1>
+  <div class="container mb-4">
+    <div class="row">
+      <div class="col-3"></div>
+      <div class="col-6 header text-center">
+        <h1 class="display-3">Eat-Da-Burger!</h1>
+      </div>
+      <div class="col-3"></div>
+    </div>
+  </div>
 
   <div class="container">
     <div class="row">
       <div class="col-6">
         <ol class="list-group">
-          <lh class="lead text-center">TO BE DEVOURED</lh>
+          <lh class="lead text-center mb-2">TO BE DEVOURED</lh>
           {{#each burgers}}
             {{#unless devoured}}
               {{> burgers/burger-block devoured=false}}
@@ -16,7 +24,7 @@
 
       <div class="col-6">
         <ol class="list-group">
-          <lh class="lead text-center">DEVOURED</lh>
+          <lh class="lead text-center mb-2">DEVOURED</lh>
           {{#each burgers}}
             {{#if devoured}}
               {{> burgers/burger-block devoured=true}}

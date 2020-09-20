@@ -3,7 +3,7 @@ $(function() {
     event.preventDefault();
 
     const newBurger = {
-      burger_name: $("#burger-input").val().trim(),
+      burger_name: $("#burger-input").val().trim()
     };
 
     // Send the POST request.

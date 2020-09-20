@@ -1,0 +1,24 @@
+html {
+  background-color: #264653;
+}
+
+.jumbotron {
+  background-image: url(../images/bckgrnd.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+h1, li {
+  color: #264653 !important;
+  font-weight: bold !important;
+}
+
+lh {
+  color: #F4A261;
+  font-size: 30px !important;
+  font-weight: bold !important;
+}
+
+li {
+  background-color: #E9C46A !important;
+}
